@@ -1,0 +1,41 @@
+{
+  "profileImage": "/images/me.jpg",
+  "title": "Hi, I'm Márton Magyar",
+  "paragraphText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed. Cras pharetra arcu at fringilla pulvinar. Vivamus rutrum fermentum vehicula. Duis quis blandit dui. Nullam sapien diam, dignissim vel laoreet non, vulputate non lectus. Cras facilisis a arcu a mattis. Cras et interdum nulla, ut finibus turpis. Nam ullamcorper lectus condimentum libero dignissim, ut dignissim diam varius. In accumsan bibendum lectus eu venenatis."
+
+,
+  "techStack": [
+    "C",
+    "Node.js",
+    "Nodemon",
+    "React Router",
+    "React",
+    "Vite",
+    "MongoDB",
+    "Postgres",
+    "Adobe Premiere Pro",
+    "Figma",
+    "Canva",
+    "Git",
+    "GitHub",
+    "JavaScript",
+    "Java",
+    "Scala",
+    "HTML5",
+    "CSS3",
+    "TypeScript"
+  ],
+  "schools": [
+    {
+      "name": "University of Debrecen",
+      "degree": "Bachelor of Science in Computer Science",
+      "year": "2020 - 2024"
+    },
+    {
+      "name": "Debrecen High School",
+      "degree": "High School Diploma",
+      "year": "2016 - 2020"
+    }
+  ]
+
+}
