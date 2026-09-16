@@ -27,14 +27,16 @@
   ],
   "schools": [
     {
-      "name": "University of Debrecen",
-      "degree": "Bachelor of Science in Computer Science",
-      "year": "2020 - 2024"
+      "name": "LUT UNIVERSITY OF TECHNOLOGY",
+      "degree": "Bsc in Software and Systems Engineering 2024-2027 (ongoing)",
+      "year": "2024 - 2027",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed."
     },
     {
-      "name": "Debrecen High School",
+      "name": "BMSZC TREFORT ÁGOSTON TECHNIKUM",
       "degree": "High School Diploma",
-      "year": "2016 - 2020"
+      "year": "2019 - 2024",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed."
     }
   ]
 

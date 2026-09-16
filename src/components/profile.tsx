@@ -1,4 +1,8 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Button, Stack } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
 import aboutData from '../data/about.json';
 
 export default function Profile() {
@@ -38,12 +42,55 @@ export default function Profile() {
       <Typography variant="body1" sx={{ color: 'text.secondary', mb: 5, lineHeight: 1.7 }}>
         {aboutData.paragraphText}
       </Typography>
+      
+      {/* Social & Contact Buttons */}
+      <Stack 
+        direction="row" 
+        spacing={2} 
+        sx={{ mb: 5, flexWrap: 'wrap', gap: 1, justifyContent: 'center' }}
+      >
+        <Button 
+          variant="outlined" 
+          startIcon={<LinkedInIcon />} 
+          href="https://linkedin.com/in/yourprofile" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </Button>
+        <Button 
+          variant="outlined" 
+          startIcon={<GitHubIcon />} 
+          href="https://github.com/yourusername" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </Button>
+        <Button 
+          variant="contained" 
+          startIcon={<EmailIcon />} 
+          href="mailto:your.email@example.com"
+        >
+          Email
+        </Button>
+
+        <Button 
+          variant="outlined" 
+          startIcon={<PhoneIcon />} 
+          href="tel:+258469487277"
+        >
+          Phone
+        </Button>
+      </Stack>
 
       {/* Tech Stack Grid */}
+      <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 3, textAlign: 'center', marginTop: 10 }}>
+          Tech Stack
+      </Typography>
       <Box
         sx={{
           display: 'grid',
-          // 2 columns on mobile, 4 on tablets, exactly 6 on desktop
           gridTemplateColumns: { 
             xs: 'repeat(2, 1fr)', 
             sm: 'repeat(4, 1fr)', 
@@ -73,6 +120,59 @@ export default function Profile() {
           </Box>
         ))}
       </Box>
+
+      {/* Education Section */}
+      <Box sx={{ width: '100%', textAlign: 'left' }}>
+        <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 3, textAlign: 'center', marginTop: 10 }}>
+          Education
+        </Typography>
+
+        {aboutData.schools.map((school, index) => (
+          <Box 
+            key={index} 
+            sx={{ 
+              mb: 3, 
+              p: 3, 
+              border: '1px solid',
+              borderColor: 'divider',
+              borderRadius: 2 
+            }}
+          >
+            {/* School Name */}
+            <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+              {school.name}
+            </Typography>
+            
+            {/* Year */}
+            <Typography variant="body2" sx={{ fontStyle: 'italic', color: 'text.secondary', mb: 1 }}>
+              {school.year}
+            </Typography>
+            
+            {/* Degree */}
+            <Typography variant="subtitle1" sx={{ fontWeight: 'medium', mb: 1 }}>
+              {school.degree}
+            </Typography>
+            
+            {/* Description */}
+            <Typography variant="body1">
+              {school.description}
+            </Typography>
+          </Box>
+        ))}
+      </Box>
+
+      {/* CV Button */}
+      <Button 
+        variant="contained" 
+        size="large"
+        color="primary"
+        href="/docs/CV.pdf" 
+        download="Marton_Magyar_CV.pdf" 
+        sx={{ mt: 2, mb: 4, px: 4, py: 1.5, fontWeight: 'bold' }}
+      >
+        Download CV
+      </Button>
+
     </Box>
   );
 }

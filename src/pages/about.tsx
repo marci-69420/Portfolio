@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Profile from '../components/profile';
