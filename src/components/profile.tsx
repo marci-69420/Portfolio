@@ -1,4 +1,4 @@
-import { Box, Typography, Button, Stack } from '@mui/material';
+import { Box, Typography, Button, Stack, LinearProgress } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -84,9 +84,9 @@ export default function Profile() {
         </Button>
       </Stack>
 
-      {/* Tech Stack Grid */}
+      {/* Skills grid */}
       <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 3, textAlign: 'center', marginTop: 10 }}>
-          Tech Stack
+          Skills
       </Typography>
       <Box
         sx={{
@@ -113,7 +113,16 @@ export default function Profile() {
               alignItems: 'center',
               justifyContent: 'center',
               fontWeight: 'bold',
-              fontSize: '0.875rem'
+              fontSize: '0.875rem',
+
+            transition: 'all 0.2s ease-in-out',
+            cursor: 'default', // Keeps the standard arrow cursor
+                  
+            '&:hover': {
+                transform: 'scale(1.05)', // Enlarges the box by 5%
+                boxShadow: 3,             // Adds a Material UI drop shadow
+                backgroundColor: 'primary.light' // Slightly lightens the color
+            }
             }}
           >
             {tech}
@@ -157,6 +166,38 @@ export default function Profile() {
             <Typography variant="body1">
               {school.description}
             </Typography>
+          </Box>
+        ))}
+      </Box>
+
+      {/* Languages Section */}
+      <Box sx={{ width: '100%', textAlign: 'left', mb: 5 }}>
+        <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 3, textAlign: 'center' }}>
+          Languages
+        </Typography>
+
+        {aboutData.languages.map((lang, index) => (
+          <Box key={index} sx={{ mb: 2 }}>
+            {/* Label Row: Language Name and Level Number */}
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 0.5 }}>
+              <Typography variant="body1" sx={{ fontWeight: 'bold' }}>
+                {lang.name}
+              </Typography>
+            </Box>
+            
+            {/* The Progress Bar */}
+            <LinearProgress 
+              variant="determinate" 
+              value={lang.level * 10} // Converts your 1-10 scale to a 10-100 percentage
+              sx={{ 
+                height: 10, 
+                borderRadius: 5,
+                backgroundColor: 'grey.300', // Light grey background track
+                '& .MuiLinearProgress-bar': {
+                  borderRadius: 5,
+                }
+              }} 
+            />
           </Box>
         ))}
       </Box>

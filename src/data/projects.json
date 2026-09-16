@@ -1,0 +1,48 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Project 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed. Cras pharetra arcu at fringilla pulvinar. Vivamus rutrum fermentum vehicula. Duis quis blandit dui. Nullam sapien diam, dignissim vel laoreet non, vulputate non lectus. Cras facilisis a arcu a mattis. Cras et interdum nulla, ut finibus turpis. Nam ullamcorper lectus condimentum libero dignissim, ut dignissim diam varius. In accumsan bibendum lectus eu venenatis.",
+            "techStack": ["React", "TypeScript"],
+            "GitHubLink": "https://github.com/yourusername/project1"
+
+        },
+
+        {
+            "id": 2,
+            "name": "Project 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed. Cras pharetra arcu at fringilla pulvinar. Vivamus rutrum fermentum vehicula. Duis quis blandit dui. Nullam sapien diam, dignissim vel laoreet non, vulputate non lectus. Cras facilisis a arcu a mattis. Cras et interdum nulla, ut finibus turpis. Nam ullamcorper lectus condimentum libero dignissim, ut dignissim diam varius. In accumsan bibendum lectus eu venenatis.",
+            "techStack": ["React", "TypeScript"],
+            "GitHubLink": "https://github.com/yourusername/project1"
+
+        },
+
+        {
+            "id": 3,
+            "name": "Project 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed. Cras pharetra arcu at fringilla pulvinar. Vivamus rutrum fermentum vehicula. Duis quis blandit dui. Nullam sapien diam, dignissim vel laoreet non, vulputate non lectus. Cras facilisis a arcu a mattis. Cras et interdum nulla, ut finibus turpis. Nam ullamcorper lectus condimentum libero dignissim, ut dignissim diam varius. In accumsan bibendum lectus eu venenatis.",
+            "techStack": ["React", "TypeScript"],
+            "GitHubLink": "https://github.com/yourusername/project1"
+
+        },
+
+        {
+            "id": 4,
+            "name": "Project 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed. Cras pharetra arcu at fringilla pulvinar. Vivamus rutrum fermentum vehicula. Duis quis blandit dui. Nullam sapien diam, dignissim vel laoreet non, vulputate non lectus. Cras facilisis a arcu a mattis. Cras et interdum nulla, ut finibus turpis. Nam ullamcorper lectus condimentum libero dignissim, ut dignissim diam varius. In accumsan bibendum lectus eu venenatis.",
+            "techStack": ["React", "TypeScript"],
+            "GitHubLink": "https://github.com/yourusername/project1"
+
+        },
+
+        {
+            "id": 5,
+            "name": "Project 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed. Cras pharetra arcu at fringilla pulvinar. Vivamus rutrum fermentum vehicula. Duis quis blandit dui. Nullam sapien diam, dignissim vel laoreet non, vulputate non lectus. Cras facilisis a arcu a mattis. Cras et interdum nulla, ut finibus turpis. Nam ullamcorper lectus condimentum libero dignissim, ut dignissim diam varius. In accumsan bibendum lectus eu venenatis.",
+            "techStack": ["React", "TypeScript"],
+            "GitHubLink": "https://github.com/yourusername/project1"
+
+        }
+    ]
+}

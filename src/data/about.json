@@ -6,14 +6,15 @@
 ,
   "techStack": [
     "C",
+    "Python",
     "Node.js",
     "Nodemon",
-    "React Router",
+    "Android Studio",
     "React",
     "Vite",
     "MongoDB",
     "Postgres",
-    "Adobe Premiere Pro",
+    "Software testing",
     "Figma",
     "Canva",
     "Git",
@@ -23,7 +24,8 @@
     "Scala",
     "HTML5",
     "CSS3",
-    "TypeScript"
+    "TypeScript",
+    "Adobe premiere Pro"
   ],
   "schools": [
     {
@@ -37,6 +39,20 @@
       "degree": "High School Diploma",
       "year": "2019 - 2024",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed."
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": 8
+    },
+    {
+      "name": "Finnish",
+      "level": 4
+    },
+    {
+      "name": "Hungarian",
+      "level": 10
     }
   ]
 
