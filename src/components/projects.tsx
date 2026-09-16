@@ -33,7 +33,6 @@ export default function Projects() {
               target="_blank" 
               rel="noopener noreferrer"
               variant="outlined"
-              // Shrinking the icon specifically
               startIcon={<GitHubIcon sx={{ fontSize: '0.9rem' }} />}
               sx={{ 
                 textTransform: 'none', 
@@ -57,7 +56,6 @@ export default function Projects() {
           <Box
             sx={{
               display: 'grid',
-              // Slightly smaller grid constraints to fit nicely inside the card
               gridTemplateColumns: { 
                 xs: 'repeat(2, 1fr)', 
                 sm: 'repeat(3, 1fr)', 
