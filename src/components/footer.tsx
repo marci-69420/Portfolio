@@ -8,15 +8,15 @@ export default function Footer() {
         py: 3, 
         px: 2, 
         mt: 'auto', 
-        backgroundColor: '#f5f5f5', 
+        backgroundColor: 'black', 
         textAlign: 'center' 
       }}
     >
       <Typography 
         variant="body2" 
-        sx={{ color: 'text.secondary' }}
+        sx={{ color: 'white' }}
       >
-        Lorem ipsum
+        © 2026 Márton Magyar
       </Typography>
     </Box>
   );

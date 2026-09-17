@@ -1,7 +1,7 @@
 {
   "profileImage": "/images/me.jpg",
-  "title": "Hi, I'm Márton Magyar",
-  "paragraphText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed. Cras pharetra arcu at fringilla pulvinar. Vivamus rutrum fermentum vehicula. Duis quis blandit dui. Nullam sapien diam, dignissim vel laoreet non, vulputate non lectus. Cras facilisis a arcu a mattis. Cras et interdum nulla, ut finibus turpis. Nam ullamcorper lectus condimentum libero dignissim, ut dignissim diam varius. In accumsan bibendum lectus eu venenatis."
+  "title": "Hi, I'm Marci, software engineer student",
+  "paragraphText": "I am a third-year software engineering student at LUT University based in Finland. During my studies, I developed good collaboration skills and gained an understanding of various programming languages and development workflows. Check out my projects and skills, and feel free to contact me if you are looking for a driven junior developer in your team."
 
 ,
   "techStack": [
@@ -30,15 +30,15 @@
   "schools": [
     {
       "name": "LUT UNIVERSITY OF TECHNOLOGY",
-      "degree": "Bsc in Software and Systems Engineering 2024-2027 (ongoing)",
+      "degree": "Bsc in Software and Systems Engineering",
       "year": "2024 - 2027",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed."
+      "description": "Through a project-based curriculum, I have built strong collaborative skills and gained hands-on experience across a diverse range of programming languages and modern development workflows."
     },
     {
       "name": "BMSZC TREFORT ÁGOSTON TECHNIKUM",
       "degree": "High School Diploma",
       "year": "2019 - 2024",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed."
+      "description": "Besides my high school education, I acquired foundation knowledge in programming and electrnics, including circuits and soldering."
     }
   ],
   "languages": [

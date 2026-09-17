@@ -15,11 +15,11 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: 'black' }}>
       <Toolbar>
         {/* Left side text - Always visible */}
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Lorem ipsum
+          Márton Magyar
         </Typography>
 
         {/* DESKTOP VIEW: Links on the right */}

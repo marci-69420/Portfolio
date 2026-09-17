@@ -2,19 +2,30 @@
     "projects": [
         {
             "id": 1,
-            "name": "Project 1",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed. Cras pharetra arcu at fringilla pulvinar. Vivamus rutrum fermentum vehicula. Duis quis blandit dui. Nullam sapien diam, dignissim vel laoreet non, vulputate non lectus. Cras facilisis a arcu a mattis. Cras et interdum nulla, ut finibus turpis. Nam ullamcorper lectus condimentum libero dignissim, ut dignissim diam varius. In accumsan bibendum lectus eu venenatis.",
-            "techStack": ["React", "TypeScript"],
-            "GitHubLink": "https://github.com/yourusername/project1"
+            "name": "Cloud container",
+            "description": "Cloud Container is a collaborative document management system where authenticated users can create, edit, delete, and download documents as PDFs, as well as store them in the cloud to save valuable disk space. \n\nDocuments can be formatted using headings, ordered and unordered lists, and checklists provided by EditorJS. After registering, users can upload a profile picture to make their profile more identifiable. To collaborate, users can share documents directly with other registered users or generate a read-only link for non-authenticated users. The user-friendly clean UI is translated into three languages: English, Finnish, and Hungarian.",
+            "techStack": [
+                { "name": "React", "color": "purple" },
+                { "name": "Express.js", "color": "#EEEEEE" },
+                { "name": "Node.js", "color": "#339933" },
+                { "name": "MongoDB", "color": "#47A248" },
+                { "name": "EditorJS", "color": "#388AE5" },
+                { "name": "TypeScript", "color": "#388AE5" }
+            ],
+            "GitHubLink": "https://github.com/marci-69420/Cloud_Container"
 
         },
 
         {
             "id": 2,
-            "name": "Project 1",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tincidunt tellus, id consequat augue dictum sed. Cras pharetra arcu at fringilla pulvinar. Vivamus rutrum fermentum vehicula. Duis quis blandit dui. Nullam sapien diam, dignissim vel laoreet non, vulputate non lectus. Cras facilisis a arcu a mattis. Cras et interdum nulla, ut finibus turpis. Nam ullamcorper lectus condimentum libero dignissim, ut dignissim diam varius. In accumsan bibendum lectus eu venenatis.",
-            "techStack": ["React", "TypeScript"],
-            "GitHubLink": "https://github.com/yourusername/project1"
+            "name": "Population statistics of Finland",
+            "description": "This project is a frontend web application that visualizes the population statistics of Finland. It fetches data from the official Statistics Finland (Tilastokeskus) API and displays it in a user-friendly manner. The application allow users to compare the population of different regions, view historical trends, and gain insights into demographic changes over time. The project is build using simple tehcnologies since this is my first web application project.",
+            "techStack": [
+                { "name": "JavaScript", "color": " yellow" },
+                { "name": "HTML", "color": "orange" },
+                { "name": "CSS", "color": "purple" }
+            ],
+            "GitHubLink": "https://github.com/marci-69420/Population-Statistics"
 
         },
 
