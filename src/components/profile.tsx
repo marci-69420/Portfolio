@@ -287,7 +287,7 @@ export default function Profile() {
           {/* Text & Buttons */}
           <Box sx={{ textAlign: { xs: 'center', md: 'left' } }}>
             <Typography variant="h4" component="h1" sx={{ fontWeight: 'bold', mb: 2 }}>
-              {aboutData.title}
+              Hi, I'm <Box component="span" sx={{ color: '#00ff1578' }}>Marci</Box>, software engineer student
             </Typography>
 
             <Typography variant="body1" sx={{ color: 'white', mb: 4, lineHeight: 1.7 }}>
@@ -306,7 +306,7 @@ export default function Profile() {
               <Button 
                 variant="outlined" 
                 startIcon={<LinkedInIcon />} 
-                href="https://linkedin.com/in/yourprofile" 
+                href="https://www.linkedin.com/in/m%C3%A1rton-magyar/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
@@ -316,7 +316,7 @@ export default function Profile() {
               <Button 
                 variant="outlined" 
                 startIcon={<GitHubIcon />} 
-                href="https://github.com/yourusername" 
+                href="https://github.com/marci-69420" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
@@ -326,7 +326,7 @@ export default function Profile() {
               <Button 
                 variant="outlined" 
                 startIcon={<EmailIcon />} 
-                href="mailto:your.email@example.com"
+                href="mailto:magyarmarci04@gmail.com"
                 sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
               >
                 Email
@@ -382,19 +382,21 @@ export default function Profile() {
                   py: 1.5,
                   px: 1,
                   border: '2px solid',
-                  borderColor: '#00ff15cb',
+                  borderColor: '#00ff1578',
                   borderRadius: 1.5,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   fontWeight: 'bold',
                   fontSize: '0.7rem',
-                  color: '#00ff15cb',
+                  color: '#00ff1578',
                   transition: 'all 0.2s ease-in-out',
                   cursor: 'default',
                   '&:hover': {
                     transform: 'scale(1.05)',
-                    boxShadow: 3
+                    boxShadow: 3,
+                    borderColor: '#00ff15',
+                    color: '#00ff15',
                   },
                   width: '100%',
                 }}
@@ -486,7 +488,7 @@ export default function Profile() {
                 backgroundColor: 'rgba(255, 255, 255, 0.2)',
                 '& .MuiLinearProgress-bar': {
                   borderRadius: 5,
-                  backgroundColor: '#00ff15cb',
+                  backgroundColor: '#00ff1578',
                   transition: 'transform 1s ease-out'
                 }
               }} 
