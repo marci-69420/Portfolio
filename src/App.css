@@ -67,3 +67,10 @@
     animation: none;
   }
 }
+
+@media (max-width: 600px) {
+  .ambient-background::before,
+  .ambient-background::after {
+    animation: none;
+  }
+}

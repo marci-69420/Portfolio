@@ -141,10 +141,10 @@ export default function Profile() {
 
     const timer = window.setTimeout(() => {
       setAllowSkillsReveal(true);
-    }, 500);
+    }, isMobile ? 0 : 500);
 
     return () => window.clearTimeout(timer);
-  }, [animateTopProfile]);
+  }, [animateTopProfile, isMobile]);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 600px)');
@@ -236,7 +236,7 @@ export default function Profile() {
       }}
     >
       {/* Image & Text (wrapped) */}
-      <Fade in={animateTopProfile} timeout={100} style={{ transitionDelay: animateTopProfile ? '100ms' : '0ms' }}>
+      <Fade in={animateTopProfile} timeout={isMobile ? 0 : 100} style={{ transitionDelay: !isMobile && animateTopProfile ? '100ms' : '0ms' }}>
         <Box 
           ref={topProfileRef}
           sx={{ 
@@ -339,7 +339,7 @@ export default function Profile() {
 
       {/* SKILLS SECTION */}
       <Box sx={{ width: '100%', mt: 2, marginTop: 3 }}>
-        <Fade in={allowSkillsReveal && animateSkillsTitle} timeout={600} style={{ transitionDelay: allowSkillsReveal && animateSkillsTitle ? '100ms' : '0ms' }}>
+        <Fade in={allowSkillsReveal && animateSkillsTitle} timeout={isMobile ? 0 : 600} style={{ transitionDelay: !isMobile && allowSkillsReveal && animateSkillsTitle ? '100ms' : '0ms' }}>
           <Typography
             ref={skillsTitleRef}
             variant="h5"
@@ -364,8 +364,8 @@ export default function Profile() {
             <Fade
               key={tech}
               in={allowSkillsReveal && (isMobile ? animateSkillsTitle : animateSkills[index] ?? false)}
-              timeout={600}
-              style={{ transitionDelay: allowSkillsReveal && (isMobile ? animateSkillsTitle : animateSkills[index]) ? `${isMobile ? 100 : index * 80}ms` : '0ms' }}
+              timeout={isMobile ? 0 : 600}
+              style={{ transitionDelay: !isMobile && allowSkillsReveal && animateSkills[index] ? `${index * 80}ms` : '0ms' }}
             >
               <Box
                 ref={(element: HTMLDivElement | null) => {
@@ -406,7 +406,7 @@ export default function Profile() {
 
       {/* EDUCATION SECTION */}
       <Box sx={{ width: '100%', textAlign: 'left', mt: 6, marginTop: 5 }}>
-        <Fade in={allowSkillsReveal && animateEducationTitle} timeout={600} style={{ transitionDelay: allowSkillsReveal && animateEducationTitle ? '100ms' : '0ms' }}>
+        <Fade in={allowSkillsReveal && animateEducationTitle} timeout={isMobile ? 0 : 600} style={{ transitionDelay: !isMobile && allowSkillsReveal && animateEducationTitle ? '100ms' : '0ms' }}>
           <Typography
             ref={educationTitleRef}
             variant="h5"
@@ -420,8 +420,8 @@ export default function Profile() {
           <Fade
             key={index}
             in={allowSkillsReveal && (isMobile ? animateEducationTitle : animateSchools[index] ?? false)}
-            timeout={600}
-            style={{ transitionDelay: allowSkillsReveal && (isMobile ? animateEducationTitle : animateSchools[index]) ? `${isMobile ? 120 : index * 100}ms` : '0ms' }}
+            timeout={isMobile ? 0 : 600}
+            style={{ transitionDelay: !isMobile && allowSkillsReveal && animateSchools[index] ? `${index * 100}ms` : '0ms' }}
           >
             <Box
               ref={(element: HTMLDivElement | null) => {
@@ -486,7 +486,7 @@ export default function Profile() {
                 '& .MuiLinearProgress-bar': {
                   borderRadius: 5,
                   backgroundColor: '#00ff1578',
-                  transition: 'transform 1s ease-out'
+                  transition: { xs: 'none', md: 'transform 1s ease-out' }
                 }
               }} 
             />

@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { AppBar, Toolbar, Typography, Box, Button, IconButton, Menu, MenuItem } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box, Button, IconButton, Menu, MenuItem, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
+  const isMobile = useMediaQuery('(max-width:600px)');
   const navigate = useNavigate();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -82,7 +83,7 @@ export default function Navbar() {
             anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
             keepMounted
             transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-            transitionDuration={{ enter: 120, exit: 80 }}
+            transitionDuration={{ enter: isMobile ? 0 : 120, exit: isMobile ? 0 : 80 }}
             open={Boolean(anchorElNav)}
             onClose={handleCloseNavMenu}
             sx={{

@@ -1,11 +1,12 @@
 import { useRef, useState, useEffect } from 'react';
-import { Box, Typography, Button, Fade } from '@mui/material';
+import { Box, Typography, Button, Fade, useMediaQuery } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import projectsData from '../data/projects.json';
 
 export default function Projects() {
   const titleRef = useRef<HTMLHeadingElement | null>(null);
   const [animateTitle, setAnimateTitle] = useState(false);
+  const isMobile = useMediaQuery('(max-width:600px)');
   const projectRefs = useRef<Array<HTMLDivElement | null>>([]);
   const [animateProjects, setAnimateProjects] = useState<boolean[]>([]);
 
@@ -75,7 +76,7 @@ export default function Projects() {
 
   return (
     <Box sx={{ maxWidth: 800, mx: 'auto', p: 4, marginTop: 6}}>
-      <Fade in={animateTitle} timeout={600}>
+      <Fade in={animateTitle} timeout={isMobile ? 0 : 600}>
         <Typography
           ref={titleRef}
           variant="h4"
@@ -90,8 +91,8 @@ export default function Projects() {
         <Fade
           key={project.id}
           in={animateProjects[projectIndex] ?? false}
-          timeout={600}
-          style={{ transitionDelay: animateProjects[projectIndex] ? `${projectIndex * 100}ms` : '0ms' }}
+          timeout={isMobile ? 0 : 600}
+          style={{ transitionDelay: !isMobile && animateProjects[projectIndex] ? `${projectIndex * 100}ms` : '0ms' }}
         >
           <Box 
             ref={(element: HTMLDivElement | null) => {
