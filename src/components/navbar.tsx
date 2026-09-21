@@ -41,8 +41,8 @@ export default function Navbar() {
             minHeight: { xs: 72, md: 88 },
             mx: 'auto',
             backgroundColor: 'rgba(0, 0, 0, 0.29)',
-            backdropFilter: 'blur(16px)',
-            WebkitBackdropFilter: 'blur(16px)',
+            backdropFilter: { xs: 'none', md: 'blur(16px)' },
+            WebkitBackdropFilter: { xs: 'none', md: 'blur(16px)' },
             border: '1px solid rgba(0, 0, 0, 0.29)',
             borderRadius: 2,
             px: { xs: 2, sm: 3, md: 0 },
@@ -82,14 +82,15 @@ export default function Navbar() {
             anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
             keepMounted
             transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+            transitionDuration={{ enter: 120, exit: 80 }}
             open={Boolean(anchorElNav)}
             onClose={handleCloseNavMenu}
             sx={{
               display: { xs: 'block', md: 'none' },
               '& .MuiPaper-root': {
                 backgroundColor: 'rgba(0, 0, 0, 0.2)',
-                backdropFilter: 'blur(16px)',
-                WebkitBackdropFilter: 'blur(16px)',
+                backdropFilter: { xs: 'none', md: 'blur(16px)' },
+                WebkitBackdropFilter: { xs: 'none', md: 'blur(16px)' },
                 border: '1px solid rgba(0, 0, 0, 0.2)',
                 borderRadius: 2,
                 boxShadow: 'none',
