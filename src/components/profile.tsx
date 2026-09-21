@@ -386,8 +386,8 @@ export default function Profile() {
                   backgroundColor: 'rgba(0, 0, 0, 0.1)',
                   transition: 'all 0.2s ease-in-out',
                   cursor: 'default',
-                  backdropFilter: 'blur(16px)',
-                  WebkitBackdropFilter: 'blur(16px)',
+                  backdropFilter: { xs: 'none', lg: 'blur(16px)' },
+                  WebkitBackdropFilter: { xs: 'none', lg: 'blur(16px)' },
                   '&:hover': {
                     transform: 'scale(1.05)',
                     boxShadow: 3,

@@ -103,8 +103,8 @@ export default function Projects() {
               border: '1px solid',  
               borderColor: 'divider',
               borderRadius: 2,
-              backdropFilter: 'blur(16px)',
-              WebkitBackdropFilter: 'blur(16px)',
+              backdropFilter: { xs: 'none', lg: 'blur(16px)' },
+              WebkitBackdropFilter: { xs: 'none', lg: 'blur(16px)' },
               backgroundColor: 'rgba(0, 0, 0, 0.13)',
             }}
           >
