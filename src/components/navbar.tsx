@@ -1,10 +1,23 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AppBar, Toolbar, Typography, Box, Button, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
+  const navbarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleOutsidePointerDown = (event: PointerEvent) => {
+      if (anchorElNav && navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
+        setAnchorElNav(null);
+      }
+    };
+
+    document.addEventListener('pointerdown', handleOutsidePointerDown);
+
+    return () => document.removeEventListener('pointerdown', handleOutsidePointerDown);
+  }, [anchorElNav]);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -17,6 +30,7 @@ export default function Navbar() {
   return (
     <>
       <AppBar
+        ref={navbarRef}
         position="fixed"
         sx={{
           top: 0,
@@ -36,14 +50,13 @@ export default function Navbar() {
             mx: 'auto',
             position: 'relative',
             backgroundColor: 'rgba(0, 0, 0, 0.29)',
-            backdropFilter: { xs: 'none', lg: 'blur(16px)' },
-            WebkitBackdropFilter: { xs: 'none', lg: 'blur(16px)' },
+            backdropFilter: 'blur(16px)',
+            WebkitBackdropFilter: 'blur(16px)',
             border: '1px solid rgba(0, 0, 0, 0.29)',
             borderRadius: 2,
             px: { xs: 2, sm: 3, md: 0 },
           }}
         >
-        {/* Left side text - Always visible */}
         <Typography variant="h6" component="div" sx={{ flexGrow: 1, paddingLeft: 2 }}>
           Márton Magyar
         </Typography>
@@ -81,8 +94,10 @@ export default function Navbar() {
               right: 0,
               minWidth: 150,
               p: 1,
-              backgroundColor: 'rgba(0, 0, 0, 0.92)',
-              border: '1px solid rgba(0, 0, 0, 0.2)',
+              backgroundColor: 'rgba(0, 0, 0, 0.50)',
+              backdropFilter: 'blur(16px)',
+              WebkitBackdropFilter: 'blur(16px)',
+              border: '1px solid rgba(0, 0, 0, 0.29)',
               borderRadius: 2,
               boxShadow: 'none',
             }}

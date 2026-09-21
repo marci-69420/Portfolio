@@ -232,7 +232,7 @@ export default function Profile() {
         maxWidth: 1000, 
         mx: 'auto', 
         p: { xs: 2, md: 4 },
-        marginTop: 5
+        marginTop: 3
       }}
     >
       {/* Image & Text (wrapped) */}

@@ -109,7 +109,7 @@ export default function Projects() {
             }}
           >
           {/* Header Area: Title and GitHub button */}
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', mb: 2,  }}>
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: { xs: 'center', sm: 'flex-start' }, mb: 2,  }}>
             <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
               {project.name}
             </Typography>
@@ -131,11 +131,15 @@ export default function Projects() {
                 borderColor: '#00ff1578',
                 '& .MuiButton-startIcon': {
                   mr: { xs: 0, sm: 1 },
+                  ml: { xs: 0, sm: '-4px' },
                 },
                 '& .MuiButton-label': {
                   display: { xs: 'none', sm: 'inline-flex' },
                 },
                 width: { xs: 40, sm: 'auto' },
+                height: { xs: 40, sm: 'auto' },
+                minHeight: { xs: 40, sm: 'auto' },
+                justifyContent: 'center',
                 px: { xs: 0, sm: 1 },
                 '&:hover': {
                   borderColor: '#00ff15',
