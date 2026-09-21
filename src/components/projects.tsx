@@ -122,6 +122,7 @@ export default function Projects() {
               variant="outlined"
               startIcon={<GitHubIcon sx={{ fontSize: '0.9rem' }} />}
               sx={{ 
+                borderRadius: 2,
                 textTransform: 'none', 
                 fontSize: '0.65rem', 
                 py: 0.25,
@@ -191,7 +192,7 @@ export default function Projects() {
                   color: getTechColor(tech),
                   border: '2px solid',
                   borderColor: getTechColor(tech),
-                  borderRadius: 1.5,
+                  borderRadius: 2,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',

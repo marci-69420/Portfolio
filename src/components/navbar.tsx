@@ -63,10 +63,10 @@ export default function Navbar() {
 
         {/* DESKTOP VIEW: Links on the right */}
         <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 , paddingRight: 2 }}>
-          <Button component={Link} to="/about" sx={{ color: 'white', '&:hover': { color: '#00ff1578' } }}>
+          <Button component={Link} to="/about" sx={{ borderRadius: 2, color: 'white', '&:hover': { color: '#00ff1578' } }}>
             About
           </Button>
-          <Button component={Link} to="/projects" sx={{ color: 'white', '&:hover': { color: '#00ff1578' } }}>
+          <Button component={Link} to="/projects" sx={{ borderRadius: 2, color: 'white', '&:hover': { color: '#00ff1578' } }}>
             Projects
           </Button>
         </Box>
@@ -80,7 +80,7 @@ export default function Navbar() {
             aria-haspopup="true"
             onClick={handleOpenNavMenu}
             color="inherit"
-            sx={{ color: '#00ff1578' }}
+            sx={{ borderRadius: 2, color: '#00ff1578' }}
           >
             <MenuIcon />
           </IconButton>
@@ -107,7 +107,7 @@ export default function Navbar() {
               to="/about"
               role="menuitem"
               onClick={handleCloseNavMenu}
-              sx={{ display: 'block', width: '100%', color: 'white', textAlign: 'left' }}
+              sx={{ display: 'block', width: '100%', borderRadius: 2, color: 'white', textAlign: 'left' }}
             >
               About
             </Button>
@@ -116,7 +116,7 @@ export default function Navbar() {
               to="/projects"
               role="menuitem"
               onClick={handleCloseNavMenu}
-              sx={{ display: 'block', width: '100%', color: 'white', textAlign: 'left' }}
+              sx={{ display: 'block', width: '100%', borderRadius: 2, color: 'white', textAlign: 'left' }}
             >
               Projects
             </Button>

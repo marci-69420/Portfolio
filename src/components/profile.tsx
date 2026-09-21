@@ -257,7 +257,7 @@ export default function Profile() {
             sx={{
               width: { xs: 150, md: 200 }, 
               height: { xs: 150, md: 200 },
-              borderRadius: '10%',
+              borderRadius: 2,
               objectFit: 'cover',
               boxShadow: 3,
               flexShrink: 0,
@@ -295,7 +295,7 @@ export default function Profile() {
                   href="https://www.linkedin.com/in/m%C3%A1rton-magyar/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
                 >
                   LinkedIn
                 </Button>
@@ -307,7 +307,7 @@ export default function Profile() {
                   href="https://github.com/marci-69420" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
                 >
                   GitHub
                 </Button>
@@ -317,7 +317,7 @@ export default function Profile() {
                   variant="outlined" 
                   startIcon={<EmailIcon />} 
                   href="mailto:magyarmarci04@gmail.com"
-                  sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
                 >
                   Email
                 </Button>
@@ -327,7 +327,7 @@ export default function Profile() {
                   variant="outlined" 
                   startIcon={<PhoneIcon />} 
                   href="tel:+258469487277"
-                  sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
                 >
                   Phone
                 </Button>
@@ -376,7 +376,7 @@ export default function Profile() {
                   px: 1,
                   border: '2px solid',
                   borderColor: '#00ff1578',
-                  borderRadius: 1.5,
+                  borderRadius: 2,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -481,10 +481,10 @@ export default function Profile() {
               value={animateProgress ? lang.level * 10 : 0} 
               sx={{ 
                 height: 10, 
-                borderRadius: 5,
+                borderRadius: 2,
                 backgroundColor: 'rgba(255, 255, 255, 0.2)',
                 '& .MuiLinearProgress-bar': {
-                  borderRadius: 5,
+                  borderRadius: 2,
                   backgroundColor: '#00ff1578',
                   transition: 'transform 1s ease-out'
                 }
@@ -501,7 +501,7 @@ export default function Profile() {
         color="primary"
         href="/docs/CV.pdf" 
         download="Marton_Magyar_CV.pdf"
-        sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+        sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
       >
         Download CV
       </Button>
