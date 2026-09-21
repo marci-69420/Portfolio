@@ -8,7 +8,24 @@ function ScrollToTop() {
   const { pathname, search } = useLocation()
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.history.scrollRestoration = 'manual'
+  }, [])
+
+  useEffect(() => {
+    const resetScroll = () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+    }
+
+    resetScroll()
+    const frame = window.requestAnimationFrame(resetScroll)
+    const timeout = window.setTimeout(resetScroll, 50)
+
+    return () => {
+      window.cancelAnimationFrame(frame)
+      window.clearTimeout(timeout)
+    }
   }, [pathname, search])
 
   return null
