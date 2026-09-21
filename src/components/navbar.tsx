@@ -44,7 +44,7 @@ export default function Navbar() {
       >
         <Toolbar
           sx={{
-            width: '100%',
+            width: { xs: 'calc(100% - 2rem)', md: '100%' },
             maxWidth: 1100,
             minHeight: { xs: 72, md: 88 },
             mx: 'auto',

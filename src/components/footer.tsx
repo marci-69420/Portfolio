@@ -16,7 +16,7 @@ export default function Footer() {
       >
         <Box
           sx={{
-            width: '100%',
+            width: { xs: 'calc(100% - 2rem)', md: '100%' },
             maxWidth: 1100,
             minHeight: { xs: 72, md: 88 },
             mx: 'auto',
@@ -24,8 +24,8 @@ export default function Footer() {
             alignItems: 'center',
             justifyContent: 'center',
             backgroundColor: 'rgba(0, 0, 0, 0.42)',
-            backdropFilter: { xs: 'none', lg: 'blur(16px)' },
-            WebkitBackdropFilter: { xs: 'none', lg: 'blur(16px)' },
+            backdropFilter: 'blur(16px)',
+            WebkitBackdropFilter: 'blur(16px)',
             border: '1px solid rgba(255, 255, 255, 0.08)',
             borderRadius: 2,
             px: { xs: 2, sm: 3, md: 0 },
