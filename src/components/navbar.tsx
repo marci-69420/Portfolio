@@ -97,7 +97,7 @@ export default function Navbar() {
               backgroundColor: 'rgba(0, 0, 0, 0.50)',
               backdropFilter: 'blur(16px)',
               WebkitBackdropFilter: 'blur(16px)',
-              border: '1px solid rgba(0, 0, 0, 0.29)',
+              border: '1px solid rgba(0, 0, 0, 0.50)',
               borderRadius: 2,
               boxShadow: 'none',
             }}

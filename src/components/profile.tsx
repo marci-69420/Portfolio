@@ -482,7 +482,7 @@ export default function Profile() {
               sx={{ 
                 height: 10, 
                 borderRadius: 2,
-                backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
                 '& .MuiLinearProgress-bar': {
                   borderRadius: 2,
                   backgroundColor: '#00ff1578',
