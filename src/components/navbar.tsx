@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { AppBar, Toolbar, Typography, Box, Button, IconButton, Menu, MenuItem } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box, Button, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
-  const navigate = useNavigate();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -13,11 +12,6 @@ export default function Navbar() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleMobileNavigation = (path: string) => {
-    handleCloseNavMenu();
-    navigate(path);
   };
 
   return (
@@ -40,6 +34,7 @@ export default function Navbar() {
             maxWidth: 1100,
             minHeight: { xs: 72, md: 88 },
             mx: 'auto',
+            position: 'relative',
             backgroundColor: 'rgba(0, 0, 0, 0.29)',
             backdropFilter: { xs: 'none', lg: 'blur(16px)' },
             WebkitBackdropFilter: { xs: 'none', lg: 'blur(16px)' },
@@ -76,38 +71,42 @@ export default function Navbar() {
           >
             <MenuIcon />
           </IconButton>
-          <Menu
+          {anchorElNav && (
+          <Box
             id="menu-appbar"
-            anchorEl={anchorElNav}
-            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-            keepMounted
-            transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-            transitionDuration={{ enter: 120, exit: 80 }}
-            open={Boolean(anchorElNav)}
-            onClose={handleCloseNavMenu}
-            disableScrollLock
+            role="menu"
             sx={{
-              display: { xs: 'block', md: 'none' },
-              '& .MuiPaper-root': {
-                backgroundColor: 'rgba(0, 0, 0, 0.2)',
-                backdropFilter: { xs: 'none', lg: 'blur(16px)' },
-                WebkitBackdropFilter: { xs: 'none', lg: 'blur(16px)' },
-                border: '1px solid rgba(0, 0, 0, 0.2)',
-                borderRadius: 2,
-                boxShadow: 'none',
-                '& .MuiMenuItem-root': {
-                  color: 'white',
-                },
-              },
+              position: 'absolute',
+              top: '100%',
+              right: 0,
+              minWidth: 150,
+              p: 1,
+              backgroundColor: 'rgba(0, 0, 0, 0.92)',
+              border: '1px solid rgba(0, 0, 0, 0.2)',
+              borderRadius: 2,
+              boxShadow: 'none',
             }}
           >
-            <MenuItem onClick={() => handleMobileNavigation('/about')}>
-              <Typography sx={{ textAlign: 'center', color: 'white' }}>About</Typography>
-            </MenuItem>
-            <MenuItem onClick={() => handleMobileNavigation('/projects')}>
-              <Typography sx={{ textAlign: 'center', color: 'white' }}>Projects</Typography>
-            </MenuItem>
-          </Menu>
+            <Button
+              component={Link}
+              to="/about"
+              role="menuitem"
+              onClick={handleCloseNavMenu}
+              sx={{ display: 'block', width: '100%', color: 'white', textAlign: 'left' }}
+            >
+              About
+            </Button>
+            <Button
+              component={Link}
+              to="/projects"
+              role="menuitem"
+              onClick={handleCloseNavMenu}
+              sx={{ display: 'block', width: '100%', color: 'white', textAlign: 'left' }}
+            >
+              Projects
+            </Button>
+          </Box>
+          )}
         </Box>
         </Toolbar>
       </AppBar>
