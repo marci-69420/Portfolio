@@ -67,3 +67,18 @@
     animation: none;
   }
 }
+
+/* Disable animations on mobile and tablet views */
+@media (max-width: 1024px) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .ambient-background::before,
+  .ambient-background::after {
+    animation: none !important;
+  }
+}
