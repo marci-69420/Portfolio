@@ -74,7 +74,7 @@ export default function Projects() {
   }, [animateProjects]);
 
   return (
-    <Box sx={{ maxWidth: 800, mx: 'auto', p: 4 }}>
+    <Box sx={{ maxWidth: 800, mx: 'auto', p: 4, marginTop: 6}}>
       <Fade in={animateTitle} timeout={600}>
         <Typography
           ref={titleRef}
@@ -100,9 +100,12 @@ export default function Projects() {
             sx={{ 
               mb: 4, 
               p: 3, 
-              border: '1px solid',
+              border: '1px solid',  
               borderColor: 'divider',
-              borderRadius: 2 
+              borderRadius: 2,
+              backdropFilter: 'blur(16px)',
+              WebkitBackdropFilter: 'blur(16px)',
+              backgroundColor: 'rgba(0, 0, 0, 0.13)',
             }}
           >
           {/* Header Area: Title and GitHub button */}

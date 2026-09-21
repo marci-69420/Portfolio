@@ -251,7 +251,8 @@ export default function Profile() {
         alignItems: 'center',
         maxWidth: 1000, 
         mx: 'auto', 
-        p: { xs: 2, md: 4 }
+        p: { xs: 2, md: 4 },
+        marginTop: 5
       }}
     >
       {/* Image & Text (wrapped) */}
@@ -295,57 +296,69 @@ export default function Profile() {
             </Typography>
             
             <Stack 
+              component="ul"
               direction="row" 
               spacing={2} 
               sx={{ 
                 flexWrap: 'wrap', 
                 gap: 1, 
-                justifyContent: { xs: 'center', md: 'flex-start' }
+                justifyContent: { xs: 'center', md: 'flex-start' },
+                listStyle: 'none',
+                m: 0,
+                p: 0,
               }}
             >
-              <Button 
-                variant="outlined" 
-                startIcon={<LinkedInIcon />} 
-                href="https://www.linkedin.com/in/m%C3%A1rton-magyar/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
-              >
-                LinkedIn
-              </Button>
-              <Button 
-                variant="outlined" 
-                startIcon={<GitHubIcon />} 
-                href="https://github.com/marci-69420" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
-              >
-                GitHub
-              </Button>
-              <Button 
-                variant="outlined" 
-                startIcon={<EmailIcon />} 
-                href="mailto:magyarmarci04@gmail.com"
-                sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
-              >
-                Email
-              </Button>
-              <Button 
-                variant="outlined" 
-                startIcon={<PhoneIcon />} 
-                href="tel:+258469487277"
-                sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
-              >
-                Phone
-              </Button>
+              <Box component="li">
+                <Button 
+                  variant="outlined" 
+                  startIcon={<LinkedInIcon />} 
+                  href="https://www.linkedin.com/in/m%C3%A1rton-magyar/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                >
+                  LinkedIn
+                </Button>
+              </Box>
+              <Box component="li">
+                <Button 
+                  variant="outlined" 
+                  startIcon={<GitHubIcon />} 
+                  href="https://github.com/marci-69420" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                >
+                  GitHub
+                </Button>
+              </Box>
+              <Box component="li">
+                <Button 
+                  variant="outlined" 
+                  startIcon={<EmailIcon />} 
+                  href="mailto:magyarmarci04@gmail.com"
+                  sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                >
+                  Email
+                </Button>
+              </Box>
+              <Box component="li">
+                <Button 
+                  variant="outlined" 
+                  startIcon={<PhoneIcon />} 
+                  href="tel:+258469487277"
+                  sx={{ color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                >
+                  Phone
+                </Button>
+              </Box>
             </Stack>
           </Box>
         </Box>
       </Fade>
 
       {/* SKILLS SECTION */}
-      <Box sx={{ width: '100%', mt: 2 }}>
+      <Box sx={{ width: '100%', mt: 2, marginTop: 3 }}>
         <Fade in={allowSkillsReveal && animateSkillsTitle} timeout={600} style={{ transitionDelay: allowSkillsReveal && animateSkillsTitle ? '100ms' : '0ms' }}>
           <Typography
             ref={skillsTitleRef}
@@ -388,10 +401,13 @@ export default function Profile() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   fontWeight: 'bold',
-                  fontSize: '0.7rem',
+                  fontSize: '0.9rem',
                   color: '#00ff1578',
+                  backgroundColor: 'rgba(0, 0, 0, 0.1)',
                   transition: 'all 0.2s ease-in-out',
                   cursor: 'default',
+                  backdropFilter: 'blur(16px)',
+                  WebkitBackdropFilter: 'blur(16px)',
                   '&:hover': {
                     transform: 'scale(1.05)',
                     boxShadow: 3,
@@ -409,7 +425,7 @@ export default function Profile() {
       </Box>
 
       {/* EDUCATION SECTION */}
-      <Box sx={{ width: '100%', textAlign: 'left', mt: 6 }}>
+      <Box sx={{ width: '100%', textAlign: 'left', mt: 6, marginTop: 5 }}>
         <Fade in={allowSkillsReveal && animateEducationTitle} timeout={600} style={{ transitionDelay: allowSkillsReveal && animateEducationTitle ? '100ms' : '0ms' }}>
           <Typography
             ref={educationTitleRef}
@@ -463,6 +479,7 @@ export default function Profile() {
           alignSelf: { xs: 'center', md: 'flex-end' },
           mt: 4,
           mb: 5,
+          marginTop: 5
         }}
       >
         <Typography

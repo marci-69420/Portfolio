@@ -5,13 +5,21 @@ import ProjectsPage from './pages/projects'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <div className="ambient-background" aria-hidden="true" />
+      <BrowserRouter>
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <a className="skip-link" href="#main">
+            Skip to main content
+          </a>
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </>
   )
 }
 

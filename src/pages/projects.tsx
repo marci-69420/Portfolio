@@ -7,8 +7,9 @@ export default function ProjectsPage() {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
-      <Projects />
-      <Footer />
+      <Box component="main" id="main" sx={{ flexGrow: 1 }}>
+        <Projects />
+      </Box>
     </Box>
   );
 }

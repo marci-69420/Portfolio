@@ -1,3 +1,69 @@
 .app {
   min-height: 100svh;
 }
+
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 1rem;
+  z-index: 2000;
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  background: #000000;
+  transform: translateY(-150%);
+  transition: transform 150ms ease-in-out;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.ambient-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 55% at 100% 12%, rgba(0, 255, 21, 0.13), transparent 68%),
+    radial-gradient(ellipse 60% 75% at -8% 88%, rgba(0, 112, 48, 0.16), transparent 72%),
+    linear-gradient(145deg, #050706 0%, #0a0d0b 48%, #050706 100%);
+}
+
+.ambient-background::before,
+.ambient-background::after {
+  position: absolute;
+  inset: -30%;
+  content: '';
+  filter: blur(80px);
+  opacity: 0.55;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.ambient-background::before {
+  background: linear-gradient(115deg, transparent 30%, rgba(0, 255, 21, 0.12) 48%, transparent 66%);
+  animation: ambient-drift 18s ease-in-out infinite alternate;
+}
+
+.ambient-background::after {
+  background: linear-gradient(245deg, transparent 32%, rgba(24, 112, 67, 0.1) 50%, transparent 68%);
+  animation: ambient-drift-reverse 24s ease-in-out infinite alternate;
+}
+
+@keyframes ambient-drift {
+  from { transform: translate3d(-4%, -2%, 0) rotate(-2deg); }
+  to { transform: translate3d(5%, 3%, 0) rotate(2deg); }
+}
+
+@keyframes ambient-drift-reverse {
+  from { transform: translate3d(4%, 2%, 0) rotate(2deg); }
+  to { transform: translate3d(-5%, -3%, 0) rotate(-2deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-background::before,
+  .ambient-background::after {
+    animation: none;
+  }
+}

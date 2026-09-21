@@ -8,11 +8,10 @@ export default function About() {
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
       
-      <Box component="main" sx={{ flexGrow: 1, p: 4 }}>
+      <Box component="main" id="main" sx={{ flexGrow: 1, p: 4 }}>
         <Profile />
       </Box>
       
-      <Footer />
     </Box>
   );
 }
