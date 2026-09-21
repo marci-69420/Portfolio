@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="ambient-background" aria-hidden="true" />
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <div style={{ position: 'relative', zIndex: 1 }}>
           <a className="skip-link" href="#main">
             Skip to main content
