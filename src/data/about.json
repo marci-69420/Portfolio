@@ -1,6 +1,6 @@
 {
   "profileImage": "images/me.jpg",
-  "title": "Hi, I'm Marci, software engineer student",
+  "title": "Hi, I'm Marci, software engineering student",
   "paragraphText": "I am a third-year software engineering student at LUT University based in Finland. During my studies, I developed good collaboration skills and gained an understanding of various programming languages and development workflows. Check out my projects and skills, and feel free to contact me if you are looking for a driven junior developer in your team."
 
 ,
@@ -28,7 +28,7 @@
   "schools": [
     {
       "name": "LUT UNIVERSITY OF TECHNOLOGY",
-      "degree": "Bsc in Software and Systems Engineering",
+      "degree": "BSc. in Software and Systems Engineering",
       "year": "2024 - 2027",
       "description": "Through a project-based curriculum, I have built strong collaborative skills and gained hands-on experience across a diverse range of programming languages and modern development workflows."
     },
@@ -36,7 +36,7 @@
       "name": "BMSZC TREFORT ÁGOSTON TECHNIKUM",
       "degree": "High School Diploma",
       "year": "2019 - 2024",
-      "description": "Besides my high school education, I acquired foundation knowledge in programming and electrnics, including circuits and soldering."
+      "description": "Besides my high school education, I acquired foundational knowledge in programming and electronics, including circuits and soldering."
     }
   ],
   "languages": [

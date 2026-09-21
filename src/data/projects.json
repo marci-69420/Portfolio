@@ -20,7 +20,7 @@
         {
             "id": 2,
             "name": "Population statistics of Finland",
-            "description": "This project is a frontend web application that visualizes the population statistics of Finland. It fetches data from the official Statistics Finland (Tilastokeskus) API and displays it in a user-friendly manner. The application allow users to compare the population of different regions, view historical trends, and gain insights into demographic changes over time. The project is build using simple tehcnologies since this is my first web application project.",
+            "description": "This project is a frontend web application that visualizes the population statistics of Finland. It fetches data from the official Statistics Finland (Tilastokeskus) API and displays it in a user-friendly manner. The application allows users to compare the population of different regions, view historical trends, and gain insights into demographic changes over time. The project is built using simple technologies since this is my first web application project.",
             "techStack": [
                 { "name": "JavaScript", "color": " yellow" },
                 { "name": "HTML", "color": "orange" },
@@ -47,7 +47,7 @@
 
         {
             "id": 4,
-            "name": "Datastructures in C",
+            "name": "Data Structures in C",
             "description": "This university final project demonstrates the implementation of fundamental data structures in C, focusing on binary search trees and doubly-linked lists. Building this project provided hands-on experience with manual memory management, algorithmic design, and efficient data manipulation.",
             "techStack": [
                 { "name": "C", "color": " darkblue" },
@@ -60,7 +60,7 @@
         {
             "id": 5,
             "name": "Finno-Ugric Lutemon",
-            "description": "This is my first project that I publised on Github. Me and my team made an android application in Android studio. The application is a game where the user can train and battle Lutemons. The project was a great learning experience in mobile app development, and applying object-oriented programming principles.",
+            "description": "This is my first project that I published on GitHub. My team and I made an Android application in Android Studio. The application is a game where the user can train and battle Lutemons. The project was a great learning experience in mobile app development and applying object-oriented programming principles.",
             "techStack": [
                 { "name": "Java", "color": " darkred" },
                 { "name": "Android Studio", "color": "darkgreen" }

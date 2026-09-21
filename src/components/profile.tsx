@@ -499,7 +499,7 @@ export default function Profile() {
         variant="outlined" 
         size="large"
         color="primary"
-        href="/docs/CV.pdf" 
+        href={`${import.meta.env.BASE_URL}docs/CV.pdf`}
         download="Marton_Magyar_CV.pdf"
         sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
       >
