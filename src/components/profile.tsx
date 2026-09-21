@@ -19,8 +19,6 @@ export default function Profile() {
   const skillRefs = useRef<Array<HTMLDivElement | null>>([]);
   const [animateSkills, setAnimateSkills] = useState<boolean[]>([]);
 
-  const [animateEducation, setAnimateEducation] = useState(false);
-  const educationRef = useRef<HTMLDivElement>(null);
   const educationTitleRef = useRef<HTMLHeadingElement | null>(null);
   const [animateEducationTitle, setAnimateEducationTitle] = useState(false);
   const schoolRefs = useRef<Array<HTMLDivElement | null>>([]);
@@ -47,24 +45,6 @@ export default function Profile() {
 
     return () => observer.disconnect();
   }, [animateProgress]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setAnimateEducation(true);
-          if (educationRef.current) observer.unobserve(educationRef.current);
-        }
-      },
-      { threshold: 0.2 } // Triggers when 20% of the section is visible
-    );
-
-    if (educationRef.current) observer.observe(educationRef.current);
-
-    return () => {
-      if (educationRef.current) observer.unobserve(educationRef.current);
-    };
-  }, []);
 
   useEffect(() => {
     if (!allowSkillsReveal) {
@@ -388,7 +368,7 @@ export default function Profile() {
               style={{ transitionDelay: allowSkillsReveal && (isMobile ? animateSkillsTitle : animateSkills[index]) ? `${isMobile ? 100 : index * 80}ms` : '0ms' }}
             >
               <Box
-                ref={(element) => {
+                ref={(element: HTMLDivElement | null) => {
                   skillRefs.current[index] = element;
                 }}
                 sx={{
@@ -444,7 +424,7 @@ export default function Profile() {
             style={{ transitionDelay: allowSkillsReveal && (isMobile ? animateEducationTitle : animateSchools[index]) ? `${isMobile ? 120 : index * 100}ms` : '0ms' }}
           >
             <Box
-              ref={(element) => {
+              ref={(element: HTMLDivElement | null) => {
                 schoolRefs.current[index] = element;
               }}
               sx={{

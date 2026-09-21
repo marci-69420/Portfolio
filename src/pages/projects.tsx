@@ -1,6 +1,5 @@
 import { Box } from '@mui/material';
 import Navbar from '../components/navbar';
-import Footer from '../components/footer';
 import Projects from '../components/projects';
 
 export default function ProjectsPage() {

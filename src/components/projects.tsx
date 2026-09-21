@@ -94,7 +94,7 @@ export default function Projects() {
           style={{ transitionDelay: animateProjects[projectIndex] ? `${projectIndex * 100}ms` : '0ms' }}
         >
           <Box 
-            ref={(element) => {
+            ref={(element: HTMLDivElement | null) => {
               projectRefs.current[projectIndex] = element;
             }}
             sx={{ 
@@ -125,7 +125,6 @@ export default function Projects() {
                 textTransform: 'none', 
                 fontSize: '0.65rem', 
                 py: 0.25,
-                px: 1,
                 minWidth: 'auto',
                 mt: 0.25,
                 color: '#00ff1578',
@@ -137,7 +136,6 @@ export default function Projects() {
                   display: { xs: 'none', sm: 'inline-flex' },
                 },
                 width: { xs: 40, sm: 'auto' },
-                minWidth: { xs: 40, sm: 'auto' },
                 px: { xs: 0, sm: 1 },
                 '&:hover': {
                   borderColor: '#00ff15',
