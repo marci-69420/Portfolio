@@ -80,6 +80,7 @@ export default function Projects() {
           ref={titleRef}
           variant="h4"
           component="h1"
+          className="blur-background"
           sx={{ fontWeight: 'bold', mb: 4, textAlign: 'center' }}
         >
           My Projects

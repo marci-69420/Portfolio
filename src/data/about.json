@@ -1,5 +1,5 @@
 {
-  "profileImage": "images/me.jpg",
+  "profileImage": "images/me.webp",
   "title": "Hi, I'm Marci, software engineering student",
   "paragraphText": "I am a third-year software engineering student at LUT University based in Finland. During my studies, I developed good collaboration skills and gained an understanding of various programming languages and development workflows. Check out my projects and skills, and feel free to contact me if you are looking for a driven junior developer in your team."
 
@@ -14,7 +14,7 @@
     "Vite",
     "MongoDB",
     "Postgres",
-    "Software testing",
+    "Testing",
     "Figma",
     "Canva",
     "Git",

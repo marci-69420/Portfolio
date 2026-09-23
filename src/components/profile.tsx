@@ -10,7 +10,7 @@ export default function Profile() {
 
   const [animateProgress, setAnimateProgress] = useState(false);
   const languagesSectionRef = useRef<HTMLDivElement>(null);
-  const [animateTopProfile, setAnimateTopProfile] = useState(false);
+  const [animateTopProfile, setAnimateTopProfile] = useState(true);
   const topProfileRef = useRef<HTMLDivElement>(null);
   const [allowSkillsReveal, setAllowSkillsReveal] = useState(false);
   const skillsTitleRef = useRef<HTMLHeadingElement | null>(null);
@@ -239,6 +239,7 @@ export default function Profile() {
       <Fade in={animateTopProfile} timeout={100} style={{ transitionDelay: animateTopProfile ? '100ms' : '0ms' }}>
         <Box 
           ref={topProfileRef}
+          className="blur-background"
           sx={{ 
             display: 'flex', 
             flexDirection: { xs: 'column', md: 'row' },
@@ -252,16 +253,22 @@ export default function Profile() {
           {/* Profile Image */}
           <Box 
             component="img"
+            className="profile-img"
             src={aboutData.profileImage}
-            alt="Profile Image"
+            alt="Profile image of Márton Magyar in front of the Saimaa lake in Finland"
+            width={520}
+            height={520}
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
             sx={{
-              width: { xs: 150, md: 200 }, 
-              height: { xs: 150, md: 200 },
+              width: { xs: 190, md: 260 }, 
+              height: { xs: 190, md: 260 },
               borderRadius: 2,
               objectFit: 'cover',
               boxShadow: 3,
               flexShrink: 0,
-              marginTop: 8
+              marginTop: 6
             }}
           />
 
@@ -279,6 +286,7 @@ export default function Profile() {
               component="ul"
               direction="row" 
               spacing={2} 
+              aria-label="Social media links"
               sx={{ 
                 flexWrap: 'wrap', 
                 gap: 1, 
@@ -295,7 +303,7 @@ export default function Profile() {
                   href="https://www.linkedin.com/in/m%C3%A1rton-magyar/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
                 >
                   LinkedIn
                 </Button>
@@ -307,7 +315,7 @@ export default function Profile() {
                   href="https://github.com/marci-69420" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
                 >
                   GitHub
                 </Button>
@@ -317,7 +325,7 @@ export default function Profile() {
                   variant="outlined" 
                   startIcon={<EmailIcon />} 
                   href="mailto:magyarmarci04@gmail.com"
-                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
                 >
                   Email
                 </Button>
@@ -326,8 +334,8 @@ export default function Profile() {
                 <Button 
                   variant="outlined" 
                   startIcon={<PhoneIcon />} 
-                  href="tel:+258469487277"
-                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  href="tel:+358469487277"
+                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
                 >
                   Phone
                 </Button>
@@ -479,6 +487,7 @@ export default function Profile() {
             <LinearProgress 
               variant="determinate" 
               value={animateProgress ? lang.level * 10 : 0} 
+              aria-label={`${lang.name} proficiency level: ${lang.level}`}
               sx={{ 
                 height: 10, 
                 borderRadius: 2,
@@ -501,7 +510,7 @@ export default function Profile() {
         color="primary"
         href={`${import.meta.env.BASE_URL}docs/CV.pdf`}
         download="Marton_Magyar_CV.pdf"
-        sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+        sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
       >
         Download CV
       </Button>
