@@ -268,7 +268,7 @@ export default function Profile() {
               objectFit: 'cover',
               boxShadow: 3,
               flexShrink: 0,
-              marginTop: 6
+              marginTop: 5
             }}
           />
 

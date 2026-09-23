@@ -43,7 +43,7 @@
     radial-gradient(ellipse 70% 55% at 100% 12%, rgba(0, 255, 21, 0.13), transparent 68%),
     radial-gradient(ellipse 60% 75% at -8% 88%, rgba(0, 112, 48, 0.16), transparent 72%),
     linear-gradient(145deg, #050706 0%, #0a0d0b 48%, #050706 100%);
-  background-color: #050706;
+  background-color: #0a0d0b;
 }
 
 .ambient-background::before,
