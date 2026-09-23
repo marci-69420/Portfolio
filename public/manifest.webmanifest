@@ -1,0 +1,10 @@
+{
+  "name": "Marton Magyar Portfolio",
+  "short_name": "Marton Magyar",
+  "start_url": "/Portfolio/",
+  "scope": "/Portfolio/",
+  "display": "standalone",
+  "background_color": "#0a0d0b",
+  "theme_color": "#0a0d0b",
+  "description": "Marton Magyar's portfolio website, a junior software engineer."
+}

@@ -46,7 +46,21 @@
   background-color: #0a0d0b;
 }
 
-/*ambient background blur effect should go here*/
+.ambient-background::before,
+.ambient-background::after {
+  position: absolute;
+  inset: -30%;
+  content: '';
+  pointer-events: none;
+}
+
+.ambient-background::before {
+  background: linear-gradient(115deg, transparent 30%, rgba(0, 255, 21, 0.12) 48%, transparent 66%);
+}
+
+.ambient-background::after {
+  background: linear-gradient(245deg, transparent 32%, rgba(24, 112, 67, 0.1) 50%, transparent 68%);
+}
 
 .blur-background {
   position: relative;
