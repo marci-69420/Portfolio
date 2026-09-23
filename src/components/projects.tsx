@@ -129,8 +129,8 @@ export default function Projects() {
                 py: 0.25,
                 minWidth: 'auto',
                 mt: 0.25,
-                color: '#00ff1578',
-                borderColor: '#00ff1578',
+                color: '#39ff67cf',
+                borderColor: '#39ff67cf',
                 '& .MuiButton-startIcon': {
                   mr: { xs: 0, sm: 1 },
                   ml: { xs: 0, sm: '-4px' },
@@ -144,8 +144,8 @@ export default function Projects() {
                 justifyContent: 'center',
                 px: { xs: 0, sm: 1 },
                 '&:hover': {
-                  borderColor: '#00ff15',
-                  color: '#00ff15',
+                  borderColor: '#39ff66',
+                  color: '#39ff66',
                   backgroundColor: 'rgba(0, 255, 21, 0.04)'
                 }
               }}

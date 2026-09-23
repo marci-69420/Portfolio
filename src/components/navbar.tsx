@@ -63,10 +63,10 @@ export default function Navbar() {
 
         {/* DESKTOP VIEW: Links on the right */}
         <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 , paddingRight: 2 }}>
-          <Button component={Link} to="/about" sx={{ borderRadius: 2, color: 'white', '&:hover': { color: '#00ff1578' } }}>
+          <Button component={Link} to="/about" sx={{ borderRadius: 2, color: 'white', '&:hover': { color: '#39ff67cf' } }}>
             About
           </Button>
-          <Button component={Link} to="/projects" sx={{ borderRadius: 2, color: 'white', '&:hover': { color: '#00ff1578' } }}>
+          <Button component={Link} to="/projects" sx={{ borderRadius: 2, color: 'white', '&:hover': { color: '#39ff67cf' } }}>
             Projects
           </Button>
         </Box>
@@ -80,7 +80,7 @@ export default function Navbar() {
             aria-haspopup="true"
             onClick={handleOpenNavMenu}
             color="inherit"
-            sx={{ borderRadius: 2, color: '#00ff1578' }}
+            sx={{ borderRadius: 2, color: '#39ff67cf' }}
           >
             <MenuIcon />
           </IconButton>

@@ -275,7 +275,7 @@ export default function Profile() {
           {/* Text & Buttons */}
           <Box sx={{ textAlign: { xs: 'center', md: 'left' } }}>
             <Typography variant="h4" component="h1" sx={{ fontWeight: 'bold', mb: 2 }}>
-              Hi, I'm <Box component="span" sx={{ color: '#00ff1578' }}>Marci</Box>, software engineer student
+              Hi, I'm <Box component="span" sx={{ color: '#39ff67cf' }}>Marci</Box>, software engineer student
             </Typography>
 
             <Typography variant="body1" sx={{ color: 'white', mb: 4, lineHeight: 1.7 }}>
@@ -303,7 +303,7 @@ export default function Profile() {
                   href="https://www.linkedin.com/in/m%C3%A1rton-magyar/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'color 0.2s ease-in-out, border-color: 0.2s ease-in-out', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
                 >
                   LinkedIn
                 </Button>
@@ -315,7 +315,7 @@ export default function Profile() {
                   href="https://github.com/marci-69420" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'color 0.2s ease-in-out, border-color: 0.2s ease-in-out', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
                 >
                   GitHub
                 </Button>
@@ -325,7 +325,7 @@ export default function Profile() {
                   variant="outlined" 
                   startIcon={<EmailIcon />} 
                   href="mailto:magyarmarci04@gmail.com"
-                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'color 0.2s ease-in-out, border-color: 0.2s ease-in-out', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
                 >
                   Email
                 </Button>
@@ -335,7 +335,7 @@ export default function Profile() {
                   variant="outlined" 
                   startIcon={<PhoneIcon />} 
                   href="tel:+358469487277"
-                  sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+                  sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'color 0.2s ease-in-out, border-color: 0.2s ease-in-out', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
                 >
                   Phone
                 </Button>
@@ -383,14 +383,14 @@ export default function Profile() {
                   py: 1.5,
                   px: 1,
                   border: '2px solid',
-                  borderColor: '#00ff1578',
+                  borderColor: '#39ff67cf',
                   borderRadius: 2,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   fontWeight: 'bold',
                   fontSize: '0.9rem',
-                  color: '#00ff1578',
+                  color: '#39ff67cf',
                   backgroundColor: 'rgba(0, 0, 0, 0.1)',
                   transition: 'all 0.2s ease-in-out',
                   cursor: 'default',
@@ -399,8 +399,8 @@ export default function Profile() {
                   '&:hover': {
                     transform: 'scale(1.05)',
                     boxShadow: 3,
-                    borderColor: '#00ff15',
-                    color: '#00ff15',
+                    borderColor: '#39ff66',
+                    color: '#39ff66',
                   },
                   width: '100%',
                 }}
@@ -448,7 +448,7 @@ export default function Profile() {
               <Typography variant="body2" sx={{ fontStyle: 'italic', color: 'white', mb: 1 }}>
                 {school.year}
               </Typography>
-              <Typography variant="subtitle1" sx={{ fontWeight: 'medium', mb: 1, color: '#00ff1578' }}>
+              <Typography variant="subtitle1" sx={{ fontWeight: 'medium', mb: 1, color: '#39ff67cf' }}>
                 {school.degree}
               </Typography>
               <Typography variant="body1">
@@ -494,7 +494,7 @@ export default function Profile() {
                 backgroundColor: 'rgba(255, 255, 255, 0.1)',
                 '& .MuiLinearProgress-bar': {
                   borderRadius: 2,
-                  backgroundColor: '#00ff1578',
+                  backgroundColor: '#39ff67cf',
                   transition: 'transform 1s ease-out'
                 }
               }} 
@@ -510,7 +510,7 @@ export default function Profile() {
         color="primary"
         href={`${import.meta.env.BASE_URL}docs/CV.pdf`}
         download="Marton_Magyar_CV.pdf"
-        sx={{ borderRadius: 2, color: '#00ff1578', borderColor: '#00ff1578', transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out', '&:hover': { borderColor: '#00ff15', color: '#00ff15' } }}
+          sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'color 0.2s ease-in-out, border-color: 0.2s ease-in-out', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
       >
         Download CV
       </Button>
