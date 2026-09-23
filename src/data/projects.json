@@ -5,13 +5,13 @@
             "name": "Cloud container",
             "description": "Cloud Container is a collaborative document management system where authenticated users can create, edit, delete, and download documents as PDFs, as well as store them in the cloud to save valuable disk space. \n\nDocuments can be formatted using headings, ordered and unordered lists, and checklists provided by EditorJS. After registering, users can upload a profile picture to make their profile more identifiable. To collaborate, users can share documents directly with other registered users or generate a read-only link for non-authenticated users. The user-friendly clean UI is translated into three languages: English, Finnish, and Hungarian.",
             "techStack": [
-                { "name": "React", "color": "purple" },
+                { "name": "React", "color": "#c084fc" },
                 { "name": "Express.js", "color": "#EEEEEE" },
-                { "name": "Node.js", "color": "#339933" },
-                { "name": "MongoDB", "color": "#47A248" },
-                { "name": "EditorJS", "color": "darkorange" },
-                { "name": "TypeScript", "color": "#388AE5" },
-                { "name": "Vite", "color": "#646CFF" }
+                { "name": "Node.js", "color": "#68d391" },
+                { "name": "MongoDB", "color": "#6fcf85" },
+                { "name": "EditorJS", "color": "#ffb86b" },
+                { "name": "TypeScript", "color": "#7db7ff" },
+                { "name": "Vite", "color": "#a5b4fc" }
             ],
             "GitHubLink": "https://github.com/marci-69420/Cloud_Container"
 
@@ -22,9 +22,9 @@
             "name": "Population statistics of Finland",
             "description": "This project is a frontend web application that visualizes the population statistics of Finland. It fetches data from the official Statistics Finland (Tilastokeskus) API and displays it in a user-friendly manner. The application allows users to compare the population of different regions, view historical trends, and gain insights into demographic changes over time. The project is built using simple technologies since this is my first web application project.",
             "techStack": [
-                { "name": "JavaScript", "color": " yellow" },
-                { "name": "HTML", "color": "orange" },
-                { "name": "CSS", "color": "purple" }
+                { "name": "JavaScript", "color": "#facc15" },
+                { "name": "HTML", "color": "#ffb454" },
+                { "name": "CSS", "color": "#c084fc" }
             ],
             "GitHubLink": "https://github.com/marci-69420/Population-Statistics"
 
@@ -35,11 +35,11 @@
             "name": "Valio AI-mo",
             "description": "As part of the Junction 2025 project, I contributed to the development of a machine-learning-based solution for Valio (a Finnish dairy company). My main responsibilities were designing and implementing the ML algorithm for predictive analytics, as well as connecting the application to Google Cloud to support cloud-based processing and deployment. Through this project, I gain practical experience in machine learning, cloud integration, and developing solutions as part of a collaborative team.",
             "techStack": [
-                { "name": "Python", "color": " yellow" },
-                { "name": "Pandas", "color": "darkblue" },
-                { "name": "Scikit-learn", "color": "orange" },
-                { "name": "Flask", "color": "grey" },
-                { "name": "Google Cloud", "color": "red" }
+                { "name": "Python", "color": "#facc15" },
+                { "name": "Pandas", "color": "#8ab4ff" },
+                { "name": "Scikit-learn", "color": "#ffb454" },
+                { "name": "Flask", "color": "#d1d5db" },
+                { "name": "Google Cloud", "color": "#ff8585" }
             ],
             "GitHubLink": "https://github.com/eeliogata/junction-2025"
 
@@ -50,8 +50,8 @@
             "name": "Data Structures in C",
             "description": "This university final project demonstrates the implementation of fundamental data structures in C, focusing on binary search trees and doubly-linked lists. Building this project provided hands-on experience with manual memory management, algorithmic design, and efficient data manipulation.",
             "techStack": [
-                { "name": "C", "color": " darkblue" },
-                { "name": "Makefile", "color": "darkorange" }
+                { "name": "C", "color": "#8ab4ff" },
+                { "name": "Makefile", "color": "#ffb86b" }
             ],
             "GitHubLink": "https://github.com/LUT-Courses/C_final_project"
 
@@ -62,8 +62,8 @@
             "name": "Finno-Ugric Lutemon",
             "description": "This is my first project that I published on GitHub. My team and I made an Android application in Android Studio. The application is a game where the user can train and battle Lutemons. The project was a great learning experience in mobile app development and applying object-oriented programming principles.",
             "techStack": [
-                { "name": "Java", "color": " darkred" },
-                { "name": "Android Studio", "color": "darkgreen" }
+                { "name": "Java", "color": "#ff8f8f" },
+                { "name": "Android Studio", "color": "#86efac" }
             ],
             "GitHubLink": "https://github.com/remeseeli/Finno-Ugric-Lutemon"
 
