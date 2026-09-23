@@ -38,7 +38,7 @@ export default function Navbar() {
           right: 0,
           backgroundColor: 'transparent',
           boxShadow: 'none',
-          marginTop: 3,
+          marginTop: 'max(24px, env(safe-area-inset-top))',
           zIndex: (theme) => theme.zIndex.appBar,
         }}
       >

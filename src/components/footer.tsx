@@ -7,7 +7,7 @@ export default function Footer() {
         component="footer"
         sx={{
           position: 'fixed',
-          bottom: 3,
+          bottom: 'calc(3px + env(safe-area-inset-bottom))',
           left: 0,
           right: 0,
           backgroundColor: 'transparent',
