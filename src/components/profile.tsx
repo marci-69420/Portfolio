@@ -303,7 +303,7 @@ export default function Profile() {
                   href="https://www.linkedin.com/in/m%C3%A1rton-magyar/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'color 0.2s ease-in-out, border-color: 0.2s ease-in-out', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
+                    sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1)', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
                 >
                   LinkedIn
                 </Button>
@@ -315,7 +315,7 @@ export default function Profile() {
                   href="https://github.com/marci-69420" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'color 0.2s ease-in-out, border-color: 0.2s ease-in-out', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
+                    sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1)', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
                 >
                   GitHub
                 </Button>
@@ -325,7 +325,7 @@ export default function Profile() {
                   variant="outlined" 
                   startIcon={<EmailIcon />} 
                   href="mailto:magyarmarci04@gmail.com"
-                  sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'color 0.2s ease-in-out, border-color: 0.2s ease-in-out', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
+                    sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1)', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
                 >
                   Email
                 </Button>
@@ -335,7 +335,7 @@ export default function Profile() {
                   variant="outlined" 
                   startIcon={<PhoneIcon />} 
                   href="tel:+358469487277"
-                  sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'color 0.2s ease-in-out, border-color: 0.2s ease-in-out', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
+                    sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1)', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
                 >
                   Phone
                 </Button>
@@ -510,7 +510,7 @@ export default function Profile() {
         color="primary"
         href={`${import.meta.env.BASE_URL}docs/CV.pdf`}
         download="Marton_Magyar_CV.pdf"
-          sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'color 0.2s ease-in-out, border-color: 0.2s ease-in-out', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
+          sx={{ borderRadius: 2, color: '#39ff67cf', borderColor: '#39ff67cf', transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1)', '&:hover': { borderColor: '#39ff66', color: '#39ff66' } }}
       >
         Download CV
       </Button>

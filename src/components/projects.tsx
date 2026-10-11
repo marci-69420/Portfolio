@@ -131,6 +131,7 @@ export default function Projects() {
                 mt: 0.25,
                 color: '#39ff67cf',
                 borderColor: '#39ff67cf',
+                transition: 'background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1)',
                 '& .MuiButton-startIcon': {
                   mr: { xs: 0, sm: 1 },
                   ml: { xs: 0, sm: '-4px' },

@@ -5,25 +5,22 @@
 
 ,
   "techStack": [
-    "C",
     "Python",
+    "JavaScript",
+    "TypeScript",
+    "Java",
+    "C",
     "Node.js",
-    "Nodemon",
-    "Android Studio",
     "React",
-    "Vite",
-    "MongoDB",
-    "Postgres",
+    "DBMS",
+    "SQL",
     "Testing",
-    "Figma",
-    "Canva",
     "Git",
     "GitHub",
-    "JavaScript",
-    "Java",
-    "HTML5",
-    "CSS3",
-    "TypeScript"
+    "HTML + CSS",
+    "Agile",
+    "VS Code",
+    "Linux"
   ],
   "schools": [
     {
